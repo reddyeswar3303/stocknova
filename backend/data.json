@@ -1,0 +1,59 @@
+{
+  "users": [
+    { "id": 1, "name": "Rahul Sharma", "email": "rahul@example.com", "balance": 245000, "trades": 156, "status": "active", "kyc": "verified", "joined": "2 days ago" },
+    { "id": 2, "name": "Priya Patel", "email": "priya@example.com", "balance": 189000, "trades": 89, "status": "active", "kyc": "pending", "joined": "5 days ago" },
+    { "id": 3, "name": "Amit Kumar", "email": "amit@example.com", "balance": 50000, "trades": 45, "status": "suspended", "kyc": "verified", "joined": "1 week ago" },
+    { "id": 4, "name": "Sneha Gupta", "email": "sneha@example.com", "balance": 320000, "trades": 234, "status": "active", "kyc": "verified", "joined": "2 weeks ago" }
+  ],
+  "stocks": [
+    { "symbol": "SENSEX", "name": "BSE SENSEX", "price": 74210.50, "change": 0.35, "volume": "-", "ltp": 74210.50 },
+    { "symbol": "NIFTY_50", "name": "NIFTY 50", "price": 22495.20, "change": 0.28, "volume": "-", "ltp": 22495.20 },
+    { "symbol": "RELIANCE", "name": "Reliance Industries", "price": 2984.60, "change": -0.45, "volume": "12.5M", "ltp": 2984.60 },
+    { "symbol": "TCS", "name": "TCS Ltd", "price": 4012.30, "change": 1.15, "volume": "5.2M", "ltp": 4012.30 },
+    { "symbol": "HDFCBANK", "name": "HDFC Bank", "price": 1532.70, "change": -0.65, "volume": "15.1M", "ltp": 1532.70 },
+    { "symbol": "INFY", "name": "Infosys Ltd", "price": 1478.40, "change": 0.85, "volume": "9.3M", "ltp": 1478.40 },
+    { "symbol": "SBIN", "name": "State Bank of India", "price": 768.15, "change": -0.15, "volume": "22.4M", "ltp": 768.15 },
+    { "symbol": "WIPRO", "name": "Wipro", "price": 482.40, "change": -0.55, "volume": "7.3M", "ltp": 482.40 },
+    { "symbol": "ONGC", "name": "ONGC", "price": 278.90, "change": 2.35, "volume": "8.2M", "ltp": 278.90 },
+    { "symbol": "ITC", "name": "ITC Ltd", "price": 426.35, "change": 0.25, "volume": "18.2M", "ltp": 426.35 },
+    { "symbol": "LT", "name": "Larsen & Toubro", "price": 3745.20, "change": 1.05, "volume": "4.5M", "ltp": 3745.20 },
+    { "symbol": "TITAN", "name": "Titan Company", "price": 3680.15, "change": -0.25, "volume": "2.1M", "ltp": 3680.15 }
+  ],
+  "transactions": [
+    { "id": 1, "user": "Rahul Sharma", "type": "deposit", "amount": 50000, "status": "completed", "time": "5 mins ago" },
+    { "id": 2, "user": "Priya Patel", "type": "withdrawal", "amount": 25000, "status": "pending", "time": "15 mins ago" },
+    { "id": 3, "user": "Amit Kumar", "type": "deposit", "amount": 75000, "status": "completed", "time": "1 hour ago" },
+    { "id": 4, "user": "Sneha Gupta", "type": "withdrawal", "amount": 30000, "status": "completed", "time": "3 hours ago" }
+  ],
+  "userPortfolio": {
+    "totalValue": 2456789,
+    "dayGain": 12345,
+    "dayGainPercent": 0.5,
+    "gainPercent": 6.82,
+    "availableFunds": 150000
+  },
+  "holdings": [
+    { "symbol": "RELIANCE", "name": "Reliance Industries", "quantity": 50, "avgPrice": 2350.00, "currentPrice": 2456.75, "invested": 117500, "currentValue": 122837.50, "pnl": 5337.50, "pnlPercent": 4.54 },
+    { "symbol": "TCS", "name": "Tata Consultancy", "quantity": 25, "avgPrice": 3750.00, "currentPrice": 3890.50, "invested": 93750, "currentValue": 97262.50, "pnl": 3512.50, "pnlPercent": 3.75 },
+    { "symbol": "HDFCBANK", "name": "HDFC Bank", "quantity": 100, "avgPrice": 1580.00, "currentPrice": 1654.30, "invested": 158000, "currentValue": 165430, "pnl": 7430, "pnlPercent": 4.70 },
+    { "symbol": "INFY", "name": "Infosys Ltd", "quantity": 75, "avgPrice": 1720.00, "currentPrice": 1780.60, "invested": 129000, "currentValue": 133545, "pnl": 4545, "pnlPercent": 3.52 },
+    { "symbol": "SBIN", "name": "State Bank of India", "quantity": 200, "avgPrice": 780.00, "currentPrice": 742.15, "invested": 156000, "currentValue": 148430, "pnl": -7570, "pnlPercent": -4.85 }
+  ],
+  "trades": [
+    { "id": 1, "type": "buy", "stock": "RELIANCE", "quantity": 50, "price": 2450.00, "time": "2 mins ago", "total": 122500, "status": "completed" },
+    { "id": 2, "type": "sell", "stock": "TCS", "quantity": 25, "price": 3895.00, "time": "15 mins ago", "total": 97375, "status": "completed" },
+    { "id": 3, "type": "buy", "stock": "HDFCBANK", "quantity": 100, "price": 1650.00, "time": "1 hour ago", "total": 165000, "status": "completed" }
+  ],
+  "orders": [
+    { "id": 1, "type": "buy", "stock": "RELIANCE", "quantity": 50, "price": 2450.00, "time": "2 mins ago", "total": 122500, "status": "completed" },
+    { "id": 2, "type": "sell", "stock": "TCS", "quantity": 25, "price": 3895.00, "time": "15 mins ago", "total": 97375, "status": "completed" },
+    { "id": 3, "type": "buy", "stock": "HDFCBANK", "quantity": 100, "price": 1650.00, "time": "1 hour ago", "total": 165000, "status": "completed" },
+    { "id": 789, "type": "buy", "stock": "INFY", "quantity": 30, "price": 1775.50, "time": "Today, 10:30 AM", "total": 53265, "status": "pending" }
+  ],
+  "fundTransactions": [
+    { "id": 1, "type": "deposit", "amount": 50000, "date": "18 Mar 2025", "status": "completed" },
+    { "id": 2, "type": "withdrawal", "amount": 25000, "date": "15 Mar 2025", "status": "completed" },
+    { "id": 3, "type": "deposit", "amount": 100000, "date": "10 Mar 2025", "status": "completed" },
+    { "id": 4, "type": "withdrawal", "amount": 15000, "date": "05 Mar 2025", "status": "completed" }
+  ]
+}

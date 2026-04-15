@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap');
+@import "tailwindcss";
+
+/* ================= GROWW COLOR SYSTEM ================= */
+:root {
+  /* Groww's signature teal-green */
+  --groww-green: #00D09C;
+  --groww-green-dark: #00A87D;
+  --groww-green-light: #E8FBF6;
+  --groww-green-mid: #B3F0E0;
+
+  /* Groww profit / loss */
+  --groww-profit: #00D09C;
+  --groww-loss: #EB5B3C;
+  --groww-loss-light: #FFF0ED;
+
+  /* Groww purple accent */
+  --groww-purple: #7B5EA7;
+  --groww-purple-light: #F3EEF9;
+
+  /* Backgrounds */
+  --groww-bg: #F8F8F8;
+  --groww-card: #FFFFFF;
+  --groww-border: #E8E8E8;
+  --groww-input-bg: #F2F2F2;
+
+  /* Text */
+  --groww-text-primary: #231F20;
+  --groww-text-secondary: #5F6368;
+  --groww-text-muted: #9AA0A6;
+
+  /* CSS variable overrides for existing tailwind theme */
+  --background: 0 0% 97.3%;
+  --foreground: 0 3% 14%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 3% 14%;
+  --primary: 162 100% 41%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 0% 95%;
+  --secondary-foreground: 0 3% 14%;
+  --muted: 0 0% 95%;
+  --muted-foreground: 210 4% 55%;
+  --border: 0 0% 91%;
+  --input: 0 0% 95%;
+  --ring: 162 100% 41%;
+  --radius: 0.75rem;
+  --destructive: 12 83% 57%;
+  --destructive-foreground: 0 0% 100%;
+}
+
+/* ================= BASE STYLES ================= */
+*, *::before, *::after {
+  box-sizing: border-box;
+  border-color: #E8E8E8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: #FFFFFF;
+  color: #231F20;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+}
+
+/* ================= GROWW TYPOGRAPHY ================= */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #231F20;
+}
+
+/* ================= GROWW UTILITY CLASSES ================= */
+.groww-green { color: #00D09C; }
+.groww-loss { color: #EB5B3C; }
+.groww-bg { background-color: #F8F8F8; }
+.groww-card { background: #FFFFFF; border: 1px solid #E8E8E8; border-radius: 12px; }
+
+/* Groww-style green button */
+.btn-groww {
+  background-color: #00D09C;
+  color: #FFFFFF;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  font-size: 15px;
+}
+.btn-groww:hover { background-color: #00A87D; }
+.btn-groww:active { transform: scale(0.98); }
+
+/* Groww ghost button */
+.btn-groww-outline {
+  background-color: transparent;
+  color: #00D09C;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  padding: 11px 28px;
+  border-radius: 8px;
+  border: 1.5px solid #00D09C;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 15px;
+}
+.btn-groww-outline:hover { background-color: #E8FBF6; }
+
+/* Groww stat pill */
+.groww-pill-green {
+  background: #E8FBF6;
+  color: #00D09C;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 100px;
+}
+.groww-pill-red {
+  background: #FFF0ED;
+  color: #EB5B3C;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 100px;
+}
+
+/* Groww section header badge */
+.groww-badge {
+  display: inline-block;
+  background: #E8FBF6;
+  color: #00D09C;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 100px;
+  margin-bottom: 16px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #F8F8F8; }
+::-webkit-scrollbar-thumb { background: #00D09C; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #00A87D; }
+
+/* Smooth transitions */
+a, button { transition: all 0.2s ease; }
+
+/* Selection color */
+::selection { background: #B3F0E0; color: #231F20; }
